@@ -41,24 +41,13 @@ if (isset($_POST["submit"])) {
             <label for="suhu">Suhu</label>
             <input type="number" name="suhu" step="any" id="suhu" required>
             <label for="note">Keterangan</label>
-            <select name="note" id="note" onchange="suhu()">
+            <select name="note" id="note">
                 <option value="positif">Positif</option>
                 <option value="negatif">Negatif</option>
             </select>
             <input type="submit" value="Submit" name="submit">
         </form>
     </div>
-    <!-- <script>
-        function suhu() {
-            let suhu = document.getElementById("suhu").value;
-            let pilihan = document.getElementById("note");
-            if (suhu > 37) {
-                pilihan.option[0]
-            } else {
-                pilihan.option[1]
-            }
-        }
-    </script> -->
 </body>
 
 </html>
