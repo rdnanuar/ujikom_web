@@ -31,7 +31,7 @@ fetch("data/data_perjalanan.txt")
   })
   .then((text) => {
   let data = '';
-  let i = 1;
+  let increment = 1;
   // mengubah text(string) menjadi array
   let break_lines =  text.split("\r\n")
   // Looping data
@@ -40,7 +40,7 @@ fetch("data/data_perjalanan.txt")
   let pecah_element = element.split("|")
   data += "<tr>"
   // Menambahkan increment setiap data ditambahkan
-  data += "<td>"+ i++ +"</td>"
+  data += "<td>"+ increment++ +"</td>"
   // Mengambil index di dalam array
   data += "<td>"+pecah_element[0]+"</td>"
   data += "<td>"+pecah_element[1]+"</td>"
