@@ -7,7 +7,7 @@ fetch("data/config.txt")
     // Looping data
     break_lines.forEach(element => {
         // Memisahkan element [|] di dalam string dan covert menjadi array
-        var pecah_element = element.split("|")
+        let pecah_element = element.split("|")
         document.getElementById("user").innerHTML = `Halo selamat datang ${pecah_element[1]}`
     })
 })
