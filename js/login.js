@@ -20,8 +20,7 @@ function login() {
     if (pecah_element[0] == nik && pecah_element[1] == username) {
         window.location.assign("menu.html")
         alert(`Anda Berhasil login Sebagai ${pecah_element[1]}`)
-    }
+            }
+        })
     })
-})
-
 }
