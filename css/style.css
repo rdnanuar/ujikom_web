@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped&family=Montserrat&display=swap");
+
+/* Main - Color */
+:root {
+  --bg-color: #eee2dc;
+  --primary-color: #edc7b7;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-size: 1em;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Navbar */
+a {
+  text-decoration: none;
+  padding: 35px;
+  color: #000;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+nav {
+  height: 55px;
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Montserrat", sans-serif;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 66;
+  padding-left: 111px;
+  padding-right: 28px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+nav .logo {
+  font-family: "IBM Plex Sans Thai Looped", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
+.sub-nav {
+  border: 1px solid #b56357;
+  margin: 0px 29px;
+  padding: 2px 29px;
+  border-radius: 5px;
+  color: rgb(224, 223, 223);
+  background-color: #b56357;
+}
+
+.register {
+  background-color: var(--primary-color);
+  color: #b56357;
+  padding: 2px 15px;
+  margin-right: 0px;
+}
+
+/* Content - hero */
+.section-hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+}
+
+.container {
+  font-family: "IBM Plex Sans Thai Looped", sans-serif;
+  margin: 111px;
+  justify-content: space-around;
+}
+
+.section-hero h2 {
+  font-size: 1.5em;
+  padding-right: 20px;
+}
+
+.section-hero p {
+  padding-top: 25px;
+  font-size: 1.3em;
+}
+
+/* Main Content */
+
+.header {
+  text-align: center;
+  font-family: "IBM Plex Sans Thai Looped", sans-serif;
+  margin: 50px;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.content-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.content-hero p {
+  padding-top: 20px;
+}
+
+.test:nth-child(even) {
+  background-color: #fff;
+}
+
+.img {
+  width: 500px;
+  padding-left: 112px;
+}
+
+.img:nth-child(odd) {
+  margin-right: 105px;
+}
+
+.nth-even {
+  padding-left: 60px;
+}
+
+/* testimonial */
+/* Footer */
+footer {
+  text-align: center;
+  background-color: var(--primary-color);
+  padding: 20px;
+  font-weight: bold;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 768px) {
+  .order {
+    order: 2;
+  }
+  .content-hero {
+    display: flex;
+    flex-direction: column;
+  }
+  .container {
+    width: 100%;
+    margin: 40px 0px;
+    align-items: center;
+  }
+  .section-hero {
+    flex-direction: column;
+    padding-top: 70px;
+  }
+  h2,
+  p {
+    text-align: center;
+  }
+  .img-hero {
+    position: relative;
+    left: -60px;
+    top: -150px;
+  }
+  .img {
+    padding-bottom: 25px;
+  }
+  .nth-even {
+    padding-left: 0px;
+  }
+  nav {
+    padding-left: 30px;
+    padding-right: 10px;
+  }
+  .testimonials-section {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* Fix lebar tidak 100 % di mobile device */
+  body {
+    position: absolute;
+  }
+}

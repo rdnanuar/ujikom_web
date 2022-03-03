@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+    <script src="js/dashboard.js"></script>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="form.php">Isi Data</a></li>
+            </ul>
+        </div>
+        <div class="logout">
+            <input type="button" value="Sign Out" id="log" onclick="window.location='login.html';">
+        </div>
+    </nav>
+    <main>
+        <div class="container"> 
+            <form action="dashboard.html" class="form">
+                <p>Filter Data</p>
+                <input type="search" id="myInput" onkeyup="_filter()" placeholder="Search ..">
+            </form>
+            <table id="table">
+                <tr>
+                    <th style="width: 10%;">No</th>
+                    <th style="width: 10%;">Tanggal</th>
+                    <th style="width: 10%;">Waktu</th>
+                    <th style="width: 10%;">Suhu Tubuh</th>
+                    <th style="width: 34%;">Lokasi</th>
+                    <th>Keterangan</th>
+                </tr>
+                <tbody id="data">
+                </tbody>
+            </table>
+        </div>
+    </main>
+</html>

@@ -1,0 +1,106 @@
+/* Font google */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped&family=Montserrat&display=swap");
+
+/* Reset CSS */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #9fe6cb;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 30px;
+}
+
+/* Membuat kotak */
+.left {
+  width: 650px;
+  height: 450px;
+  background-color: #fff;
+  opacity: 0.45;
+  border-radius: 25%;
+  transform: rotate(135deg);
+  position: absolute;
+  left: -150px;
+  top: -120px;
+  z-index: -100;
+}
+
+/* membuat kotak sebelah kanan */
+
+.right {
+  width: 650px;
+  height: 450px;
+  background-color: #fff;
+  opacity: 0.45;
+  border-radius: 25%;
+  transform: rotate(140deg);
+  position: absolute;
+  bottom: -150px;
+  right: -120px;
+  z-index: -100;
+}
+
+.container {
+  height: 550px;
+  width: 500px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 25px;
+}
+
+/* box input type */
+.box {
+  padding: 20px;
+  width: 70%;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+}
+
+#submit {
+  margin: 30px;
+  padding: 20px;
+  width: 70%;
+  background-color: #84c7ae;
+  border: 1px solid #fff;
+  color: white;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+#submit:hover {
+  background-color: #8fd1b9;
+  color: #fff;
+}
+
+a {
+  color: #000;
+}
+
+/* Mengilangkan arrow increment di input number */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
