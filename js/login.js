@@ -14,12 +14,13 @@ function login() {
     // Looping data
     break_lines.forEach(element => {
     // Memisahkan element [|] di dalam string dan covert menjadi array
-    let pecah_element = element.split("|")
+    var pecah_element = element.split("|")
     // Validasi Login input value user
     if (pecah_element[0] == nik && pecah_element[1] == username) {
         window.location.assign("menu.html")
         alert(`Anda Berhasil login Sebagai ${pecah_element[1]}`)
             }
         })
+        
     })
 }

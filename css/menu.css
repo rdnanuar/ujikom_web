@@ -50,7 +50,13 @@ body {
 
 h2 {
   padding-top: 20px;
-  padding-left: 50px;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-content p {
