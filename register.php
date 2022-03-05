@@ -14,12 +14,12 @@
     <div class="right"></div>
     <div class="container">
         <form action="" class="form" method="POST">
-            <h3>Create An Account</h3>
+            <h3>Register</h3>
             <input type="number" id="nik" name="NIK" class="box" placeholder="Nomor Induk Kependudukan" minlength="5" required>
             <input type="text" id="userr" name="username" placeholder="Username" minlength="5" class="box" required>
             <input type="text" id="userrr" name="username1" placeholder="Confirm Username" minlength="5" class="box" required>
             <input type="submit" name="daftar" value="Create Account" id="submit">
-            <p>Already Have An Account ? <a href="login.html">Login</a> </p>
+            <p>Sudah Punya Akun ? <a href="login.html">Login</a> </p>
         </form>
     </div>
 </body>
