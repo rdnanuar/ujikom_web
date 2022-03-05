@@ -1,4 +1,4 @@
-fetch("data/config.txt")
+fetch("../data/config.txt")
 .then(respons => {
     return respons.text()
 })

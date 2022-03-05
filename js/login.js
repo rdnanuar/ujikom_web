@@ -3,7 +3,7 @@ function login() {
     const nik = document.getElementById("nik").value
     const username = document.getElementById("username").value
     // Baca Data dari file config
-    fetch("data/config.txt")
+    fetch("../data/config.txt")
     .then(response => {
     // Convert response menjadi text
     return response.text()

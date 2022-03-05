@@ -24,7 +24,7 @@ function _filter() {
 
 
 // Read file
-fetch("data/data_perjalanan.txt")
+fetch("../data/data_perjalanan.txt")
   .then((response) => {
     // Mengubah return response ke dalam text()
       return response.text();
