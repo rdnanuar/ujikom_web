@@ -33,7 +33,7 @@ if (isset($_POST["daftar"])) {
     $username = $_POST["username"];
     $username1 = $_POST["username1"];
     $format = "\r\n$nik|$username";
-    $file = fopen('data/config.txt', 'a');
+    $file = fopen('../data/config.txt', 'a');
     // validasi confirm username
     if ($username != $username1) {
         echo '<script>alert("Username tidak sama!")</script>';

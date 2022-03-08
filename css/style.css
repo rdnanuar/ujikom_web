@@ -128,7 +128,7 @@ nav .logo {
   padding-top: 20px;
 }
 
-.test:nth-child(even) {
+.content-hero:nth-child(even) {
   background-color: #fff;
 }
 
@@ -145,7 +145,6 @@ nav .logo {
   padding-left: 60px;
 }
 
-/* testimonial */
 /* Footer */
 footer {
   text-align: center;

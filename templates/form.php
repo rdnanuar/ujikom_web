@@ -7,7 +7,7 @@ if (isset($_POST["submit"])) {
     $note = $_POST["note"];
     $format = "\r\n$date|$time|$suhu|$tempat|$note";
     // Membuka file data
-    $file = fopen('data/data_perjalanan.txt', 'a+');
+    $file = fopen('../data/data_perjalanan.txt', 'a+');
     // Menulis input data ke dalam file
     if (fwrite($file, $format)) {
         echo '<script>alert("Berhasil membuat data!");</script>';
