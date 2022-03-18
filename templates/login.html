@@ -9,14 +9,13 @@
 </head>
 <body>
     <script src="../js/login.js"></script>
-    <!-- <script src="../js/validation.js"></script> -->
     <div class="left"></div>
     <div class="right"></div>
     <div class="container">
         <form class="form" onsubmit="login()">
             <h3>Login</h3>
-            <input type="text" id="nik" class="box"  placeholder="Nomor Induk Kependudukan" required>
-            <input type="text" id="username" class="box" placeholder="Username" required>
+            <input type="number" id="nik" class="box"  placeholder="Nomor Induk Kependudukan" onkeydown="valid()" required>
+            <input type="text" id="username" class="box" placeholder="Username" onkeydown="valid()" required>
             <input type="submit" value="Login" id="submit">
             <p>Belum Punya Akun ? <a href="register.php">Register</a></p>
         </form>
