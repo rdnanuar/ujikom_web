@@ -1,13 +1,9 @@
 <!DOCTYPE html>
-<html lang="id">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv='cache-control' content='no-cache'>
-    <meta http-equiv='expires' content='0'>
-    <meta http-equiv='pragma' content='no-cache'>
     <title>Register</title>
     <link rel="stylesheet" href="../css/register.css">
 </head>
@@ -22,7 +18,7 @@
             <input type="text" id="userr" name="username" placeholder="Username" minlength="5" class="box" required>
             <input type="text" id="userrr" name="username1" placeholder="Confirm Username" minlength="5" class="box" required>
             <input type="submit" name="daftar" value="Create Account" id="submit">
-            <p>Sudah Punya Akun ? <a href="login.html">Login</a> </p>
+            <p>Sudah Punya Akun ? <a href="login.html">Login</a></p>
         </form>
     </div>
 </body>
