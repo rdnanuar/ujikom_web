@@ -44,7 +44,7 @@ function validation() {
             // Memisahkan element [|] di dalam string dan covert menjadi array
             pecah_element = element.split("|")
         })
-        // Validation input login value user
+        // Validation input value user
         if(pecah_element[0] != nik && pecah_element[1] != username) {
             alert("NIK atau Username anda salah")
         }
