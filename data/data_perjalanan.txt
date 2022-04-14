@@ -1,14 +1,3 @@
-2022-02-28|22:32|36|Testing|positif
-2022-02-28|22:32|13|qwe|negatif
-2022-03-03|07:58|36|qwe|negatif
-2022-03-02|08:25|36.5|Sekolah|negatif
-2022-03-03|11:02|36.5|Taman|positif
-2022-03-03|17:14|32|123|positif
-2022-03-04|17:22|37|qwe|negatif
-2022-03-03|09:49|34.5|yhyhy|negatif
-2022-03-03|15:09|13|Taman|negatif
-2022-03-04|15:10|36|Taman|negatif
-2022-03-03|23:32|36|qwe|negatif
-2022-03-05|08:09|36|qwe|negatif
-2022-03-09|15:43|35|Taman|negatif
-2022-03-24|14:59|35|Taman|negatif
+80|2022-12-15|18:00|123|Bogor
+100|2022-12-20|10:00|35|Lembang
+80|2022-12-15|19:00|123|Bandung

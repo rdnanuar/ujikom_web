@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
 /* Reset css */
 * {
   padding: 0;
@@ -6,7 +8,7 @@
 
 body {
   background-color: #9fe6cb;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Karla', sans-serif;
   display: flex;
   height: 100vh;
   justify-content: center;
@@ -42,39 +44,44 @@ body {
 
 h3 {
   padding-top: 20px;
+  font-size: 2.5rem;
+  color: #212B27;
+  font-weight: bold;
+  text-align: center;
 }
 
 .container {
-  width: 50%;
+  width: 37%;
 }
 
 form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   width: 100%;
   height: 85%;
   align-items: center;
   background-color: #fff;
   border-radius: 25px;
-  margin: 50px auto;
   z-index: 666;
 }
 
 input {
-  padding: 15px;
-  border-radius: 15px;
-  width: 50%;
-  border: 1px solid black;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  width: 60%;
+  border: 1.5px solid black;
 }
 
 label {
-  padding: 5px 5px;
+  padding-top: 10px;
 }
 
 input[type="submit"] {
   margin: 30px;
-  padding: 15px;
-  width: 55.5%;
+  padding: 10px;
+  width: 64.5%;
   background-color: #84c7ae;
   border: 1px solid #fff;
   color: white;
@@ -82,4 +89,19 @@ input[type="submit"] {
   border-radius: 15px;
   cursor: pointer;
   font-size: 1.2rem;
+}
+
+input[type="submit"]:hover {
+    background-color: #257053;
+}
+
+select {
+  padding:10px;
+  border-radius: 10px;
+  width: 64.5%;
+  margin-top: 5px;
+  border: 1.5px solid black;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
 }

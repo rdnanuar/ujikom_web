@@ -4,10 +4,10 @@ if (isset($_POST["submit"])) {
     $time = $_POST["time"];
     $tempat = $_POST["tempat"];
     $suhu = $_POST["suhu"];
-    $note = $_POST["note"];
-    $format = "\r\n$date|$time|$suhu|$tempat|$note";
+    $id_catatan = rand(0, 100);
+    $format = "\r\n$id_catatan|$date|$time|$suhu|$tempat";
     // Membuka file data
-    $file = fopen('../data/data_perjalanan.txt', 'a+');
+    $file = fopen('../data/data_perjalanan.txt', 'a');
     // Menulis input data ke dalam file
     if (fwrite($file, $format)) {
         echo '<script>alert("Berhasil membuat data!");</script>';
@@ -33,20 +33,22 @@ if (isset($_POST["submit"])) {
     <div class="left"></div>
     <div class="right"></div>
     <div class="container">
-        <form method="POST">
+        <form method="post">
+            <input type="hidden" name="id_catatan" value="<? $pecah['0']; ?>">
             <h3>Form Data</h3>
             <label for="date">Tanggal</label>
-            <input type="date" name="date" required>
+            <input value="<? $pecah['1']; ?>" type="date" name="date" required>
             <label for="time">Waktu</label>
-            <input type="time" name="time" required>
-            <label for="tempat">Tempat</label>
-            <input type="text" name="tempat">
+            <input value="<? $pecah['2']; ?>" type="time" name="time" required>
             <label for="suhu">Suhu</label>
-            <input type="number" name="suhu" step="any" id="suhu" required>
-            <label for="note">Keterangan</label>
-            <select name="note" id="note">
-                <option value="positif">Positif</option>
-                <option value="negatif">Negatif</option>
+            <input value="<? $pecah['3']; ?>" type="number" name="suhu" step="any" id="suhu" required>
+            <label for="tempat">Tempat</label>
+            <select value="<? $pecah['4']; ?>" name="tempat" id="tempat">
+                <option value="Jakarta">Jakarta</option>
+                <option value="Bandung">Bandung</option>
+                <option value="Bandung">Surabaya</option>
+                <option value="Bandung">Bogor</option>
+                <option value="Bandung">Aceh</option>
             </select>
             <input type="submit" value="Submit" name="submit">
         </form>

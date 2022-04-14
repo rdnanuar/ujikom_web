@@ -11,4 +11,3 @@ fetch("../data/config.txt")
         document.getElementById("user").innerHTML = `Halo selamat datang ${pecah_element[1]}`
     })
 })
-    

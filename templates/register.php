@@ -1,30 +1,3 @@
-<!DOCTYPE html>
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
-    <link rel="stylesheet" href="../css/register.css">
-</head>
-
-<body>
-    <div class="left"></div>
-    <div class="right"></div>
-    <div class="container">
-        <form action="" class="form" method="POST">
-            <h3>Register</h3>
-            <input type="number" id="nik" name="NIK" class="box" placeholder="Nomor Induk Kependudukan" minlength="5" required>
-            <input type="text" id="userr" name="username" placeholder="Username" minlength="5" class="box" required>
-            <input type="text" id="userrr" name="username1" placeholder="Confirm Username" minlength="5" class="box" required>
-            <input type="submit" name="daftar" value="Create Account" id="submit">
-            <p>Sudah Punya Akun ? <a href="login.html">Login</a></p>
-        </form>
-    </div>
-</body>
-
-</html>
-
 <!-- Php Register account -->
 <?php
 if (isset($_POST["daftar"])) {
@@ -45,3 +18,31 @@ if (isset($_POST["daftar"])) {
     }
 }
 ?>
+
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="../css/register.css">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+</head>
+
+<body>
+    <div class="left"></div>
+    <div class="right"></div>
+    <div class="container">
+        <form action="" class="form" method="POST">
+            <h3>Register</h3>
+            <input type="number" id="nik" name="NIK" class="box" placeholder="Nomor Induk Kependudukan" minlength="5" required>
+            <input type="text" id="userr" name="username" placeholder="Username" minlength="5" class="box" required>
+            <input type="text" id="userrr" name="username1" placeholder="Confirm Username" minlength="5" class="box" required>
+            <input type="submit" name="daftar" value="Create Account" id="submit">
+            <p>Sudah Punya Akun ? <a href="login.html">Login</a></p>
+        </form>
+    </div>
+</body>
+
+</html>

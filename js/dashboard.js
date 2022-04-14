@@ -21,6 +21,11 @@ function _filter() {
     }
 }
 
+// remove dat
+function remove() {
+  const list = document.getElementById("data");
+  list.removeChild(list.firstChild);
+}
 
 
 // Read file
@@ -42,11 +47,11 @@ fetch("../data/data_perjalanan.txt")
   // Menambahkan increment setiap data ditambahkan
   data += "<td>"+ increment++ +"</td>"
   // Mengambil index di dalam array
-  data += "<td>"+pecah_element[0]+"</td>"
   data += "<td>"+pecah_element[1]+"</td>"
   data += "<td>"+pecah_element[2]+"</td>"
   data += "<td>"+pecah_element[3]+"</td>"
   data += "<td>"+pecah_element[4]+"</td>"
+  data += "<td>"+ '<a href="#" onclick="remove()">Hapus</a>'+"</td>"
   data += "</tr>"
   })
   document.getElementById("data").innerHTML = data;

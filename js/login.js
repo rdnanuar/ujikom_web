@@ -15,7 +15,6 @@ function login() {
         break_lines.forEach(element => {
             // Memisahkan element [|] di dalam string dan covert menjadi array
             let pecah_element = element.split("|")
-            console.log(pecah_element)
             // Validasi Login input value user
             if (pecah_element[0] == nik && pecah_element[1] == username) {
                 window.location.assign("menu.html")
@@ -45,7 +44,7 @@ function validation() {
             pecah_element = element.split("|")
         })
         // Validation input value user
-        if(pecah_element[0] != nik && pecah_element[1] != username) {
+        if(pecah_element[0] != nik || pecah_element[1] != username) {
             alert("NIK atau Username anda salah")
         }
     })

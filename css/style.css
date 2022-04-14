@@ -4,20 +4,16 @@
 :root {
   --bg-color: #eee2dc;
   --primary-color: #edc7b7;
+  --nav-color: #b56357;
 }
 
 html {
   scroll-behavior: smooth;
 }
-
+/* Reset */
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
-}
-
-*::after,
-*::before {
   box-sizing: border-box;
 }
 
@@ -67,22 +63,22 @@ nav .logo {
 }
 
 .sub-nav {
-  border: 1px solid #b56357;
+  border: 1px solid var(--nav-color);
   margin: 0px 29px;
   padding: 2px 29px;
   border-radius: 5px;
   color: rgb(224, 223, 223);
-  background-color: #b56357;
+  background-color: var(--nav-color);
 }
 
 .register {
   background-color: var(--primary-color);
-  color: #b56357;
+  color: var(--nav-color);
   padding: 2px 15px;
   margin-right: 0px;
 }
 
-/* Content - hero */
+/* Content- Header */
 .section-hero {
   display: flex;
   justify-content: space-around;
